@@ -39,6 +39,9 @@ public class ClientActivity extends Activity {
 	private Socket serverSocket; // 客戶端socket
 	private BufferedReader br;
 	private BufferedWriter bw;
+	
+	private String userName;
+	private String userPhone;
 
 	private String getPhone() {
 		StringBuilder string = new StringBuilder("");
@@ -89,6 +92,12 @@ public class ClientActivity extends Activity {
 
 		TextView01 = (TextView) findViewById(R.id.TextView01);
 		EditText02 = (EditText) findViewById(R.id.EditText02);
+		
+		userName = this.getIntent().getExtras().getString("name");
+		userPhone = this.getIntent().getExtras().getString("phone");
+		
+		TextView01.append(userName + "\n");
+		TextView01.append(userPhone + "\n");
 
 		Thread t = new Thread(readData);
 		t.start();
@@ -170,19 +179,6 @@ public class ClientActivity extends Activity {
 		}
 	};
 	
-	private Runnable SendToServerThread = new Runnable() {
-		@Override
-		public void run() {
-			// TODO Auto-generated method stub
-			try {
-				bw.write(msg + "\n");
-				bw.flush();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-	};
 	// 取得網路資料
 	private Runnable readData = new Runnable() {
 		@Override
@@ -214,8 +210,6 @@ public class ClientActivity extends Activity {
 				while ((msg = br.readLine()) != null) {
 					if (msg.matches("[\\d\\s]+")) {
 						mHandler.post(displayPhoneNumber);
-					} else if (msg.matches("(YES)|(NO)")) {
-						mHandler.post(SendToServerThread);
 					} else {
 						mHandler.post(updateText);
 					}
