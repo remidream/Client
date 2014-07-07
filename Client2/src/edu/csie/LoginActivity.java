@@ -39,7 +39,6 @@ public class LoginActivity extends Activity {
 				intent.setClass(context, ClientActivity.class);
 				intent.putExtras(bundle);
 				startActivity(intent);
-				
 			}			
 		});
 	}

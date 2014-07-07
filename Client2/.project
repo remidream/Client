@@ -34,7 +34,7 @@
 		<link>
 			<name>libs/guava-17.0.jar</name>
 			<type>1</type>
-			<location>/home/legendary/下載/guava-17.0.jar</location>
+			<location>/home/legendary/workspace/guava-17.0.jar</location>
 		</link>
 	</linkedResources>
 </projectDescription>
