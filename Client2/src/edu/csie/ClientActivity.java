@@ -463,7 +463,6 @@ public class ClientActivity extends Activity {
 				//	bw = new BufferedWriter(new OutputStreamWriter(
 				//		serverSocket.getOutputStream()));
 					bw.write(userName + "\t" + userPhone + "\n");
-					bw.write(getPhone()); // warning: 最多寫入 8192 字元
 					bw.flush();
 
 					state = STATE_WAIT;
