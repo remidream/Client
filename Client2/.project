@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Client2</name>
+	<name>Client</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -32,9 +32,19 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>friendly_find.png</name>
+			<type>1</type>
+			<location>/home/legendary/圖片/friendly_find.png</location>
+		</link>
+		<link>
 			<name>libs/guava-17.0.jar</name>
 			<type>1</type>
 			<location>/home/legendary/workspace/guava-17.0.jar</location>
+		</link>
+		<link>
+			<name>res/drawable/friendly_find.png</name>
+			<type>1</type>
+			<location>/home/legendary/圖片/friendly_find.png</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,5 +1,21 @@
 <resources>
 
-    <string name="app_name">Client2</string>
+    <string name="app_name">Friendly Find app</string>
+    <string name="hint_name">姓名或暱稱</string>
+    <string name="hint_phone">手機號碼</string>
+    <string name="button_login">登入</string>
+    <string name="description_logo">logo</string>
+    <string name="remember">記住我</string>
+    
+    <string name="result">查詢結果</string>
+
+    <string name="list_source_name"></string>
+    <string name="list_goal_name"></string>
+    <string name="list_hint_message1">　說：</string>
+    <string name="list_hint_message2">　的電話號碼</string>
+    <string name="list_phone_number"></string>
+    
+    <string name="request_name">請輸入要查詢的人名</string>
+    <string name="request_button">查詢</string>
 
 </resources>

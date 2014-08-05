@@ -14,7 +14,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="10"
-            android:hint="name" >
+            android:singleLine="true"
+            android:hint="@string/request_name" >
 
         </EditText>
 
@@ -24,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:layout_weight="1"
-            android:text="request" >
+            android:text="@string/request_button" >
         </Button>
     </LinearLayout>
 
@@ -32,6 +33,16 @@
         android:id="@+id/TextView01"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text="@string/result"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#FFFFFF" 
+        android:dividerHeight="1dp">
+       
+    </ListView>
 
 </LinearLayout>
