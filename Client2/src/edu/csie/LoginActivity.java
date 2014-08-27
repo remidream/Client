@@ -91,7 +91,7 @@ public class LoginActivity extends Activity {
 							try {
 								InetAddress serverIp = InetAddress
 										.getByName("140.123.230.32");
-								final int serverPort = 5050;
+								final int serverPort = 3708;
 
 								serverSocket = new Socket(serverIp, serverPort);
 								serverSocket.close();
